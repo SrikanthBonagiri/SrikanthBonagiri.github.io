@@ -9,3 +9,22 @@
 <p>Testing Web SDK</p>
 </body>
 </html>
+<script>
+         let sdwApi;
+
+// handle the start of the API
+const sdwApiStarted = (Api) => {
+  if (api) {
+    sdwApi = new api;
+    // do something with the SDW API
+    // e.g. sdwApi.sendMessage('smg')
+  } else {
+    // handle error
+  }
+};
+
+// Wait for the API to start
+document.getElementById('wbe-sdw-bot').contentWindow.SdwApi
+  .then(value => sdwApiStarted(value))
+  .catch(() => sdwApiStarted(null));
+  </script>
